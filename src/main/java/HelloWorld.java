@@ -10,7 +10,7 @@ public class HelloWorld extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException
     {
-        resp.getWriter().print("<h1>Hello from Java!</h1>\n");
+        resp.getWriter().print("img src=\"http://weknowmemes.com/wp-content/uploads/2012/03/the-good-thing-about-science.jpg\" alt=\"we gotta tough guy here!\"/>");
     }
 
     public static void main(String[] args) throws Exception
@@ -22,6 +22,6 @@ public class HelloWorld extends HttpServlet {
         context.addServlet(new ServletHolder(new HelloWorld()),"/*");
 
         server.start();
-        server.join();   
+        server.join();
     }
 }
