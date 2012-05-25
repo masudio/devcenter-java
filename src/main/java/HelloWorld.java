@@ -10,7 +10,7 @@ public class HelloWorld extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException
     {
-        resp.getWriter().print("img src=\"http://weknowmemes.com/wp-content/uploads/2012/03/the-good-thing-about-science.jpg\" alt=\"we gotta tough guy here!\"/>");
+        resp.getWriter().print("<img src=\"http://weknowmemes.com/wp-content/uploads/2012/03/the-good-thing-about-science.jpg\" alt=\"we gotta tough guy here!\"/>");
     }
 
     public static void main(String[] args) throws Exception
